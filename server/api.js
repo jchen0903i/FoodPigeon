@@ -26,4 +26,8 @@ router.patch('/:id', controller.updateLikes, (req, res) => {
   return res.status(200).json(res.locals.likes);
 });
 
+router.patch('/:id', controller.updateLikes, (req, res) => {
+  return res.status(200).json(res.locals.likes);
+});
+
 module.exports = router;
