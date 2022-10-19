@@ -1,0 +1,42 @@
+.nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+
+.title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: rgba(242, 242, 242, 0.938);
+  font-size: 20px;
+  font-family: 'Fuzzy Bubbles', cursive;
+  padding: 0;
+  margin: 0;
+}
+.pigeon {
+  height: 75px;
+  width: auto;
+  margin-right: 10px;
+}
+button {
+  border: none;
+  cursor: pointer;
+}
+.face {
+  height: 30px;
+  width: auto;
+  border: none;
+  margin-left: 20px;
+}
+
+.newPost {
+  height: 30px;
+  width: auto;
+  border: none;
+  margin-right: 20px;
+  background-color: rgba(242, 242, 242, 0.938);
+}
