@@ -16,6 +16,7 @@
   font-family: 'Fuzzy Bubbles', cursive;
   padding: 0;
   margin: 0;
+  margin-right: 270px;
 }
 .pigeon {
   height: 75px;
@@ -39,4 +40,81 @@ button {
   border: none;
   margin-right: 20px;
   background-color: rgba(242, 242, 242, 0.938);
+}
+
+.leftNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Fuzzy Bubbles', cursive;
+  font-size: 16px;
+}
+
+@media (max-width: 900px) {
+  .nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+  }
+
+  .title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgba(242, 242, 242, 0.938);
+    font-size: 12px;
+    font-family: 'Fuzzy Bubbles', cursive;
+    padding: 0;
+    margin: 0;
+    margin-right: 0;
+  }
+  .pigeon {
+    display: none;
+    height: 35px;
+    width: auto;
+    margin-right: 10px;
+  }
+  button {
+    border: none;
+    cursor: pointer;
+  }
+  .face {
+    height: 20px;
+    width: auto;
+    border: none;
+    margin-left: 10px;
+  }
+
+  .newPost {
+    height: 25px;
+    width: auto;
+    border: none;
+    margin-right: 10px;
+    background-color: rgba(242, 242, 242, 0.938);
+  }
+
+  .leftNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 12px;
+  }
 }

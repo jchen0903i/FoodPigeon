@@ -2,9 +2,9 @@
   display: flex;
   flex-direction: column;
   width: 400px;
-  height: 475px;
+  height: 500px;
   margin-bottom: 50px;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
     rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, #ffffff0d 0px 0px 0px 1px inset;
   font-family: 'Fuzzy Bubbles', sans-serif;
@@ -42,4 +42,58 @@ img {
   width: 400px;
   height: 300px;
   object-fit: cover;
+}
+
+.deletePost {
+  position: absolute;
+  color: rgb(219, 219, 219);
+  margin-top: 5px;
+  margin-left: 375px;
+  font-size: 16px;
+  background-color: transparent;
+}
+
+.deletePost:hover {
+  font-size: 20px;
+  color: rgb(139, 139, 139);
+}
+
+.cuisine {
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 5px;
+  font-style: italic;
+}
+
+.rateLikes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.like {
+  margin-top: 0;
+  margin-left: 5px;
+  padding: 0;
+  height: 20px;
+  width: 20px;
+}
+
+.like:hover {
+  height: 25px;
+  width: 25px;
+}
+
+.pricePoint {
+  font-size: 16px;
+}
+
+.likesBar {
+  display: flex;
+  align-items: center;
+  font-family: 'Fuzzy Bubbles', cursive;
 }

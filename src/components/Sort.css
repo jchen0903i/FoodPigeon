@@ -1,0 +1,25 @@
+select {
+  border: none;
+  border-bottom: 1px solid grey;
+
+  display: flex;
+  align-items: center;
+  font-family: 'Fuzzy Bubbles', cursive;
+  font-size: 14px;
+  width: auto;
+  text-align-last: center;
+}
+
+@media (max-width: 900px) {
+  select {
+    border: none;
+    border-bottom: 1px solid grey;
+
+    display: flex;
+    align-items: center;
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 12px;
+    width: auto;
+    text-align-last: center;
+  }
+}

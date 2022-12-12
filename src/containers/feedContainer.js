@@ -1,19 +1,27 @@
 import React from 'react';
 import Post from '../components/Post.js';
 import './feedContainer.css';
+import PostForm from '../components/PostForm.js';
 
 const FeedContainer = (props) => {
-  if (!props.backendData.length) {
-    return <p>...loading</p>;
-  } else {
-    return (
-      <div className='feed'>
-        {props.backendData.map((post) => {
-          return <Post key={post._id} data={post} />;
+  console.log(props.popup);
+
+  return (
+    <div className='feed'>
+      {props.backendData &&
+        props.backendData.map((post) => {
+          return (
+            <Post
+              user={props.user}
+              setBackendData={props.setBackendData}
+              id={post._id}
+              key={post._id}
+              data={post}
+            />
+          );
         })}
-      </div>
-    );
-  }
+    </div>
+  );
 };
 
 export default FeedContainer;
